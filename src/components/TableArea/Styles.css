@@ -1,0 +1,12 @@
+.table {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgb(168, 167, 167);
+  border-radius: 10px;
+}
+.table__head__column {
+  padding: 10px 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
