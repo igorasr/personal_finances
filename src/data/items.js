@@ -12,13 +12,19 @@ export const items = [
     value: 28,
   },
   {
-    date: new Date(2022, 1, 15),
+    date: new Date(2022, 2, 15),
     category: "rent",
     tittle: "Aluguel",
     value: 100,
   },
   {
-    date: new Date(2022, 2, 1),
+    date: new Date(2022, 1, 1),
+    category: "salary",
+    tittle: "Salario",
+    value: 2000,
+  },
+  {
+    date: new Date(2022, 8, 1),
     category: "salary",
     tittle: "Salario",
     value: 2000,

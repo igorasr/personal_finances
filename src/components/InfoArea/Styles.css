@@ -1,0 +1,32 @@
+.info__area {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgb(168, 167, 167);
+  border-radius: 10px;
+  margin-top: -40px;
+  display: flex;
+  align-items: center;
+}
+
+.month__area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.monthArrow {
+  width: 40px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.monthTittle {
+  flex: 1;
+  text-align: center;
+}
+
+.resume__area {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}

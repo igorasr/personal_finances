@@ -10,7 +10,7 @@ export const TableArea = () => {
     <table className="table">
       <thead>
         <tr>
-          <th className="table__head__column" style={{ width: "100px" }}>
+          <th className="table__head__column" style={{ width: "110px" }}>
             Data
           </th>
           <th className="table__head__column" style={{ width: "130px" }}>

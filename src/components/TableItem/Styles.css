@@ -1,3 +1,10 @@
 .table__item__line {
   padding: 10px 0;
 }
+
+.category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
