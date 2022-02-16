@@ -1,6 +1,7 @@
 import "./App.css";
 import { TableArea } from "./components/TableArea/";
 import { InfoArea } from "./components/InfoArea";
+import { InputArea } from "./components/InputArea";
 import { ListProvider } from "./context/listContext";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <div className="body">
           <ListProvider>
             <InfoArea />
+            <InputArea />
             <TableArea />
           </ListProvider>
         </div>

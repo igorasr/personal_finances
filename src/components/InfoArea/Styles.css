@@ -12,6 +12,11 @@
   flex: 1;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+.month__area input {
+  width: 70%;
+  margin: 10px auto;
 }
 .monthArrow {
   width: 40px;
@@ -29,4 +34,11 @@
   flex: 2;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  font-weight: bold;
+}
+.resume__area span {
+  font-size: 1.1rem;
+  color: #888;
 }

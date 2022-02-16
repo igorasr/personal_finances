@@ -28,7 +28,10 @@ export const formatDate = (date) => {
   return `${addZeroToDate(day)}/${addZeroToDate(month + 1)}/${year}`;
 };
 
-const addZeroToDate = (month) => (month < 10 ? `0${month}` : `${month}`);
+const addZeroToDate = (number) => {
+  let newNumber = number.toString();
+  return newNumber.padStart(2, "0");
+};
 
 export const formatCurrentMonth = (currentMonth) => {
   let [year, month] = currentMonth.split("-");
@@ -48,5 +51,5 @@ export const formatCurrentMonth = (currentMonth) => {
     "Dezembro",
   ];
 
-  return `${months[parseInt(month) - 1]} ${year}`;
+  return `${months[parseInt(month) - 1]} de ${year}`;
 };

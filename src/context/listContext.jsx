@@ -10,9 +10,28 @@ export const ListProvider = ({ children }) => {
   const [filteredList, setFilteredList] = useState([]);
   const [currentMonth, setcurrentMonth] = useState(getCurrentMonth());
 
+  let categoriesKeys = Object.keys(categorys);
+
   useEffect(() => {
     setFilteredList(filterListByMonth(list, currentMonth));
+    console.log(categoriesKeys);
   }, [list, currentMonth]);
+
+  const handleTotalResult = () => {
+    let balanco = 0;
+    let income = 0;
+    let expense = 0;
+    filteredList.map((item) => {
+      if (categorys[item.category].expense) {
+        balanco -= item.value;
+        expense += item.value;
+      } else {
+        balanco += item.value;
+        income += item.value;
+      }
+    });
+    return { balanco, income, expense };
+  };
 
   const handlePreviousMonth = () => {
     let [year, month] = currentMonth.split("-");
@@ -40,6 +59,8 @@ export const ListProvider = ({ children }) => {
         currentMonth,
         handlePreviousMonth,
         handleNextMonth,
+        setcurrentMonth,
+        handleTotalResult,
       }}
     >
       {children}
